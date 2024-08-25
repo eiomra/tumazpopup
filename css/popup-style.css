@@ -1,0 +1,53 @@
+/* popup-style.css */
+.pm-popup {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0; /* Position the popup at the left side */ 
+    width: 40%; /* Set a fixed width or adjust as needed */
+    height: auto; /* Adjust height automatically based on content */
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 0px 5px 5px 0px;
+    color: #fff;
+}
+
+/* For screens larger than or equal to lg */
+@media (min-width: 992px) {
+    .pm-popup {
+      width: 40%; 
+    }
+  }
+  
+  /* For screens smaller than lg */
+  @media (max-width: 991px) {
+    .pm-popup {
+      width: 70%; 
+      margin-top: 140px;
+    }
+  }
+
+.pm-popup-content {  
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px; 
+}
+.tttitle
+{
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+.pm-close {
+    color: #fff;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pm-close:hover,
+.pm-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
